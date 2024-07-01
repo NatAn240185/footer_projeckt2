@@ -1,59 +1,6 @@
-body {
-    font-family: 'Gilroy', sans-serif;
-    background-color: #ffffff;
-    scroll-behavior: smooth;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #0c0c0c;
-}
-
-p {
-    color: rgba(12, 12, 12, 0.7);
-}
-
-a {
-    text-decoration: none;
-}
-
-ul,
-ol {
-    list-style: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    max-width: 375px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        padding-left: 65px;
-        padding-right: 65px;
-    }
-}
-
 /*footer*/
 .footer {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -135,6 +82,14 @@ ol {
     color: #fbfbfb;
 }
 
+.footer-text-section {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 279px;
+    height: 96px;
+}
+
 .footer-text {
     font-family: "Gilroy", sans-serif;
     font-weight: 600;
@@ -143,8 +98,7 @@ ol {
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
-    max-width: 279px;
-    max-height: 96px;
+
 }
 
 .footer-content {
@@ -249,11 +203,15 @@ ol {
         line-height: 1.2;
     }
 
+    .footer-text-section {
+        width: 524px;
+        height: 96px;
+        margin-top: 86px;
+    }
+
     .footer-text {
         font-size: 28px;
         line-height: 1.1;
-        max-width: 524px;
-        margin-top: 86px;
     }
 
     .footer-content {
@@ -319,5 +277,32 @@ ol {
     .footer-container {
         gap: 126px;
         margin: 0;
+    }
+
+    .footer-text-section {
+        position: absolute;
+        margin: 0;
+        top: 40px;
+        left: 378px;
+        align-items: center;
+        width: 523px;
+        height: 96px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 56px;
+    }
+
+    .footer-section-menu {
+        gap: 469px;
+    }
+
+    .footer-list {
+        min-width: 505px;
+    }
+
+    .footer-section-box {
+        gap: 671px;
     }
 }
